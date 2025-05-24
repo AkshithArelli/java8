@@ -56,7 +56,8 @@ public class Main implements Calculator{
 //using lambda expression
 public class Main{
     public static void main(String[] args) {
-        Calculator cal = () -> System.out.println("Turned On");
+        //Calculator cal = () -> {System.out.println("Turned On");}
+        Calculator cal = () -> System.out.println("Turned On");  //incase of only one statement, we don't need {}
         cal.switchOn();
     }
 }
